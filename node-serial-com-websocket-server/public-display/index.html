@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>🖥 Mupi display</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="pantalla1" class="pantalla activa">
+        <img class="img-pantalla" src="./images/Scan.png" alt="">
+        <button id="boton-pantalla2"></button>
+        <button id="boton-pantalla2"></button>
+      </div>
+      
+      <div id="pantalla2" class="pantalla">
+        <img class="img-pantalla" src="./images/How to play.png" alt="">
+        <button id="boton-pantalla3"></button>
+        <button id="boton-pantalla3"></button>
+      </div>
+      
+
+      <div id="pantalla3" class="pantalla">
+        <div class="container">
+            <div class="floor"></div>
+    
+            <div class="player"></div>
+    
+            <div class="score">0</div>
+
+            <div class="game-over">GAME OVER</div>
+        </div>
+        
+    
+        
+        <button id="boton-pantalla4"></button>
+        <button id="boton-pantalla4"></button>
+      </div>
+
+      <div id="pantalla4" class="pantalla">
+        <img class="img-pantalla" src="./images/fill.png" alt="">
+        <button id="boton-pantalla5"></button>
+      </div>
+
+      <div id="pantalla5" class="pantalla">
+        
+        <img class="img-pantalla" src="./images/FILL.png" alt="">
+        <button id="boton-pantalla5"></button>
+      </div>
+      
+
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+        integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"
+        integrity="sha512-DWtDo/6AXxH1t9p7GCWqmC4XTVK/eje94XTV6QYB39rGllLN8Tr3izDf6lkmebgqRnYh4wtSFm4CvBoA9SrdpA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="sketch.js" async defer></script>
+</body>
+
+</html>

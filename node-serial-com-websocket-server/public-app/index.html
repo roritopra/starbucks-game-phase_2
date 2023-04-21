@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>📱 Controller</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+  
+        <div id="pantalla4" class="pantalla activa">
+            <div class="pantalla4-content">
+                <input class="input-nombre" id="nombre" type="text" placeholder="Name">
+                <input class="input-celular" id="celular" type="text" placeholder="Phone">
+                <input class="input-email" id="email" type="text" placeholder="Email">
+            </div>
+            <div>
+                <button class="boton-guardarInput" onclick=guardarInput()> Guardar</button>
+                <button class="botonesconder" id="boton-pantalla5"></button>
+            </div>
+            <img src="./images/form.jpg" alt="">
+        </div>
+
+    </div>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+        integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"
+        integrity="sha512-+tu0+vUXyZX+S51npa//IN6znNTLZsBoy8mXn9WzHxfBqYMy6gOzzfTK0VqZf9O171RY9AJviHDokCnvEq8+1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="sketch.js" async defer></script>
+</body>
+
+</html>

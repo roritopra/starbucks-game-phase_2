@@ -1,0 +1,549 @@
+/*Disabled scrolling*/
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #00704A;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 800px;
+}
+
+#pantalla1{
+    position: relative;
+}
+
+#pantalla2{
+    position: relative;
+}
+
+#pantalla3 {
+    position: relative;
+}
+
+#pantalla4 {
+    position: relative;
+}
+
+.button3 {
+    position: absolute;
+    right: 56px;
+    top: 506px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    height: 120px;
+    width: 200px;
+    color: #3498db;
+    font-size: 1.5em;
+    
+}
+
+.button2 {
+    position: absolute;
+    right: 30px;
+    top: 506px;
+    width: 240px;
+    height: 60px;
+    background-color: #00BFA6;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #00BFA6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .button2 span:last-child {
+    display: none;
+   }
+   
+   .button2:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+   }
+   
+   .button2:active {
+    background-color: #87dbd0;
+   }
+
+   .button3 {
+    position: absolute;
+    right: 30px;
+    top: 506px;
+    width: 240px;
+    height: 60px;
+    background-color: transparent;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px transparent;
+    transition: .4s;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .button3 span:last-child {
+    display: none;
+   }
+   
+   .button3:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+   }
+   
+   .button3:active {
+    background-color: #87dbd0;
+   }
+
+
+
+
+   .button4 {
+background-color: none;
+width: 400px;
+   }
+   
+   .button4 span:last-child {
+    display: none;
+   }
+   
+   .button4:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+   }
+   
+   .button4:active {
+    background-color: #87dbd0;
+   }
+   
+   
+.miBoton{
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    top: 215px;
+    right: 40px;
+    background-color: #00BFA6;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px dashed #00BFA6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miBoton span:last-child {
+    display: none;
+   }
+   
+   .miBoton:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+   }
+   
+   .miBoton:active {
+    background-color: #87dbd0;
+   }
+
+
+img {
+    width: 300px;
+}
+
+.pantalla {
+    display: none;
+  }
+  
+  .pantalla.activa {
+    display: block;
+  }
+
+
+  .btn1 {
+    position: absolute;
+    right: 30px;
+    top: 506px;
+    width: 240px;
+    height: 60px;
+    background-color: #00BFA6;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #00BFA6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .btn1 span:last-child {
+    display: none;
+   }
+   
+   .btn1:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+   }
+   
+   .btn1:active {
+    background-color: #87dbd0;
+   }
+   
+   #pantalla4.pantalla.activa{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .pantalla4-content{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+   }
+
+   #celular.input-celular{
+    width: 100%;
+   }
+
+   /*Disabled scrolling*/
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #00704A;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 800px;
+}
+
+#pantalla1{
+    position: relative;
+}
+
+#pantalla2{
+    position: relative;
+}
+
+#pantalla3 {
+    position: relative;
+}
+
+#pantalla4 {
+    position: relative;
+}
+
+.button3 {
+    position: absolute;
+    right: 56px;
+    top: 506px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    height: 120px;
+    width: 200px;
+    color: #3498db;
+    font-size: 1.5em;
+    
+}
+
+.button2 {
+    position: absolute;
+    right: 30px;
+    top: 506px;
+    width: 240px;
+    height: 60px;
+    background-color: #00BFA6;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #00BFA6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .button2 span:last-child {
+    display: none;
+   }
+   
+   .button2:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+   }
+   
+   .button2:active {
+    background-color: #87dbd0;
+   }
+
+   .button3 {
+    position: absolute;
+    right: 30px;
+    top: 506px;
+    width: 240px;
+    height: 60px;
+    background-color: transparent;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px transparent;
+    transition: .4s;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .button3 span:last-child {
+    display: none;
+   }
+   
+   .button3:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+   }
+   
+   .button3:active {
+    background-color: #87dbd0;
+   }
+
+
+   .button4 {
+background-color: none;
+width: 400px;
+   }
+   
+   .button4 span:last-child {
+    display: none;
+   }
+   
+   .button4:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+   }
+   
+   .button4:active {
+    background-color: #87dbd0;
+   }
+   
+   
+.miBoton{
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    top: 215px;
+    right: 40px;
+    background-color: #00BFA6;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px dashed #00BFA6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miBoton span:last-child {
+    display: none;
+   }
+   
+   .miBoton:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+   }
+   
+   .miBoton:active {
+    background-color: #87dbd0;
+   }
+
+
+img {
+    width: 300px;
+}
+
+.pantalla {
+    display: none;
+  }
+  
+  .pantalla.activa {
+    display: block;
+  }
+  
+   .boton-guardarInput{
+    width: 30px;
+    height: 30px;
+   }
+
+   .save-button {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .boton-guardarInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 56px;
+    gap: 8px;
+    width: 249px;
+    height: 47px;
+    background: linear-gradient(90deg, #377654 0%, #DAE6E0 100%);
+    border-radius: 50.27px;
+    border: none;
+    color: white;
+    cursor: pointer;
+   }
+
+   .form {
+    width: 300px;
+    height: 649.225px;
+    background-image: url(./images/forms.png);
+    background-position: center;
+    background-size: contain;
+    }
+
+    .forms {
+        margin-top: 250px;
+        width: 250px;
+        height: 250px;
+        border-radius: 30px;
+        border: 1px dashed #106E33;
+        background-color: #EEF4F1;
+    }
+
+    .input-nombre {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: 0;
+        width: 155px;
+        background: #F9F9FF;
+        border-radius: 20px;
+        border: 0.5px solid #106E33;
+        padding: 14px 24px 14px 24px;
+        color: #106E33;
+    }
+
+    .input-celular {
+        margin-bottom: 40px;
+        height: 0;
+        width: 155px;
+        background: #F9F9FF;
+        border-radius: 20px;
+        border: 0.5px solid #106E33;
+        padding: 14px 24px 14px 24px;
+        color: #106E33;
+    }
+
+    .input-email {
+        height: 0;
+        width: 155px;
+        background: #F9F9FF;
+        border-radius: 20px;
+        border: 0.5px solid #106E33;
+        padding: 14px 24px 14px 24px;
+        color: #106E33;
+        margin-bottom: 40px;
+    }
