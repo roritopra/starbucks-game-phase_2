@@ -1,7 +1,7 @@
 import { express, Server, cors, SerialPort, ReadlineParser } from './dependencies.js'
 
 const PORT = 5050; // No cambiar
-const IPaddress ='192.168.10.18'; // Cambiar por la IP del computador
+const IPaddress ='192.168.20.21'; // Cambiar por la IP del computador
 const SERVER_IP = IPaddress;
 
 const app = express();
@@ -19,10 +19,10 @@ const httpServer = app.listen(PORT, () => {
 // Run on terminal: ngrok http 5050;
 
 /**    Correr en localhost    */
-const ioServer = new Server(httpServer);
+//const ioServer = new Server(httpServer);
 
 /**    Correr en Ngrok    */
-//const ioServer = new Server(httpServer, { path: '/real-time' });
+const ioServer = new Server(httpServer, { path: '/real-time' });
 
 app.post('/user', (request, response) => {
     console.log('----- USER -----');
@@ -33,7 +33,7 @@ app.post('/user', (request, response) => {
 
 //⚙️ SERIAL COMMUNICATION SETUP -------------------------------------------------
 const protocolConfiguration = { // *New: Defining Serial configurations
-    path: 'COM4', //*Change this COM# or usbmodem#####
+    path: 'COM5', //*Change this COM# or usbmodem#####
     baudRate: 9600
 };
 const port = new SerialPort(protocolConfiguration);

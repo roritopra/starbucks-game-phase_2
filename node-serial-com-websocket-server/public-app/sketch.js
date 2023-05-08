@@ -2,10 +2,10 @@ const NGROK = `${window.location.hostname}`;
 console.log('Server IP: ', NGROK);
 
 /**    Correr en localhost    */
-let socket = io();
+//let socket = io();
 
 /**    Correr en Ngrok    */
-//let socket = io(NGROK, { path: '/real-time' });
+let socket = io(NGROK, { path: '/real-time' });
 
 let myInfo;
 
